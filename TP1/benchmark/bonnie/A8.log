@@ -1,0 +1,115 @@
+Writing a byte at a time...done
+Writing intelligently...done
+Rewriting...done
+Reading a byte at a time...done
+Reading intelligently...done
+start 'em...done...done...done...done...done...
+Create files in sequential order...done.
+Stat files in sequential order...done.
+Delete files in sequential order...done.
+Create files in random order...done.
+Stat files in random order...done.
+Delete files in random order...done.
+Version  1.97       ------Sequential Output------ --Sequential Input- --Random-
+Concurrency   1     -Per Chr- --Block-- -Rewrite- -Per Chr- --Block-- --Seeks--
+Machine        Size K/sec %CP K/sec %CP K/sec %CP K/sec %CP K/sec %CP  /sec %CP
+A8           20000M   461  98 40940   3 13523   1  2156  98 211952   7 918.7  39
+Latency             24049us    4102ms    2918ms    7937us     250ms   78375us
+Version  1.97       ------Sequential Create------ --------Random Create--------
+A8                  -Create-- --Read--- -Delete-- -Create-- --Read--- -Delete--
+              files  /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP
+                 16    59   0 +++++ +++    57   0    59   0 +++++ +++    59   0
+Latency               254ms    5767us    1684ms   68696us    5556us     156ms
+1.97,1.97,A8,1,1487334660,20000M,,461,98,40940,3,13523,1,2156,98,211952,7,918.7,39,16,,,,,59,0,+++++,+++,57,0,59,0,+++++,+++,59,0,24049us,4102ms,2918ms,7937us,250ms,78375us,254ms,5767us,1684ms,68696us,5556us,156ms
+Writing a byte at a time...done
+Writing intelligently...done
+Rewriting...done
+Reading a byte at a time...done
+Reading intelligently...done
+start 'em...done...done...done...done...done...
+Create files in sequential order...done.
+Stat files in sequential order...done.
+Delete files in sequential order...done.
+Create files in random order...done.
+Stat files in random order...done.
+Delete files in random order...done.
+Version  1.97       ------Sequential Output------ --Sequential Input- --Random-
+Concurrency   1     -Per Chr- --Block-- -Rewrite- -Per Chr- --Block-- --Seeks--
+Machine        Size K/sec %CP K/sec %CP K/sec %CP K/sec %CP K/sec %CP  /sec %CP
+A8           20000M   495  99 60547   5 27847   1  1993  96 154149   5  1347   7
+Latency             24336us    4100ms    2767ms    8023us     204ms   87838us
+Version  1.97       ------Sequential Create------ --------Random Create--------
+A8                  -Create-- --Read--- -Delete-- -Create-- --Read--- -Delete--
+              files  /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP
+                 16    58   0 +++++ +++    58   0    59   0 +++++ +++    57   0
+Latency               251ms    5744us     515ms     230ms    5590us     219ms
+1.97,1.97,A8,1,1487282024,20000M,,495,99,60547,5,27847,1,1993,96,154149,5,1347,7,16,,,,,58,0,+++++,+++,58,0,59,0,+++++,+++,57,0,24336us,4100ms,2767ms,8023us,204ms,87838us,251ms,5744us,515ms,230ms,5590us,219ms
+Writing a byte at a time...done
+Writing intelligently...done
+Rewriting...done
+Reading a byte at a time...done
+Reading intelligently...done
+start 'em...done...done...done...done...done...
+Create files in sequential order...done.
+Stat files in sequential order...done.
+Delete files in sequential order...done.
+Create files in random order...done.
+Stat files in random order...done.
+Delete files in random order...done.
+Version  1.97       ------Sequential Output------ --Sequential Input- --Random-
+Concurrency   1     -Per Chr- --Block-- -Rewrite- -Per Chr- --Block-- --Seeks--
+Machine        Size K/sec %CP K/sec %CP K/sec %CP K/sec %CP K/sec %CP  /sec %CP
+A8           20000M   493  99 72660   6 50220   3  2023  98 176968   6  1355   7
+Latency             22018us    5292ms    2940ms    9031us     230ms   67792us
+Version  1.97       ------Sequential Create------ --------Random Create--------
+A8                  -Create-- --Read--- -Delete-- -Create-- --Read--- -Delete--
+              files  /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP
+                 16    59   0 +++++ +++    57   0    59   0 +++++ +++    57   0
+Latency               236ms    5282us     125ms   63789us    5342us   96642us
+1.97,1.97,A8,1,1487274022,20000M,,493,99,72660,6,50220,3,2023,98,176968,6,1355,7,16,,,,,59,0,+++++,+++,57,0,59,0,+++++,+++,57,0,22018us,5292ms,2940ms,9031us,230ms,67792us,236ms,5282us,125ms,63789us,5342us,96642us
+Writing a byte at a time...done
+Writing intelligently...done
+Rewriting...done
+Reading a byte at a time...done
+Reading intelligently...done
+start 'em...done...done...done...done...done...
+Create files in sequential order...done.
+Stat files in sequential order...done.
+Delete files in sequential order...done.
+Create files in random order...done.
+Stat files in random order...done.
+Delete files in random order...done.
+Version  1.97       ------Sequential Output------ --Sequential Input- --Random-
+Concurrency   1     -Per Chr- --Block-- -Rewrite- -Per Chr- --Block-- --Seeks--
+Machine        Size K/sec %CP K/sec %CP K/sec %CP K/sec %CP K/sec %CP  /sec %CP
+A8           20000M   489  99 74911   6 51144   3  2100  98 178518   6 888.9  35
+Latency             20833us    2400ms    2694ms    7593us     204ms   63709us
+Version  1.97       ------Sequential Create------ --------Random Create--------
+A8                  -Create-- --Read--- -Delete-- -Create-- --Read--- -Delete--
+              files  /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP
+                 16    59   0 +++++ +++    58   0    59   0 +++++ +++    58   0
+Latency               220ms    5812us    4021ms     171ms    5546us     144ms
+1.97,1.97,A8,1,1487276315,20000M,,489,99,74911,6,51144,3,2100,98,178518,6,888.9,35,16,,,,,59,0,+++++,+++,58,0,59,0,+++++,+++,58,0,20833us,2400ms,2694ms,7593us,204ms,63709us,220ms,5812us,4021ms,171ms,5546us,144ms
+Writing a byte at a time...done
+Writing intelligently...done
+Rewriting...done
+Reading a byte at a time...done
+Reading intelligently...done
+start 'em...done...done...done...done...done...
+Create files in sequential order...done.
+Stat files in sequential order...done.
+Delete files in sequential order...done.
+Create files in random order...done.
+Stat files in random order...done.
+Delete files in random order...done.
+Version  1.97       ------Sequential Output------ --Sequential Input- --Random-
+Concurrency   1     -Per Chr- --Block-- -Rewrite- -Per Chr- --Block-- --Seeks--
+Machine        Size K/sec %CP K/sec %CP K/sec %CP K/sec %CP K/sec %CP  /sec %CP
+A8           20000M   486  97 75654   6 50570   3  2155  98 178711   6 985.2  39
+Latency             22403us    2390ms    3309ms    8635us     205ms   62455us
+Version  1.97       ------Sequential Create------ --------Random Create--------
+A8                  -Create-- --Read--- -Delete-- -Create-- --Read--- -Delete--
+              files  /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP
+                 16    59   0 +++++ +++    58   0    59   0 +++++ +++    58   0
+Latency               224ms    5718us     184ms     156ms    5575us     133ms
+1.97,1.97,A8,1,1487288045,20000M,,486,97,75654,6,50570,3,2155,98,178711,6,985.2,39,16,,,,,59,0,+++++,+++,58,0,59,0,+++++,+++,58,0,22403us,2390ms,3309ms,8635us,205ms,62455us,224ms,5718us,184ms,156ms,5575us,133ms

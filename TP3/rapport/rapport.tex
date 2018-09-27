@@ -1,0 +1,100 @@
+\documentclass[11pt]{article}
+\usepackage{amssymb}
+\usepackage[english]{babel}
+\usepackage{fullpage}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{sidecap}
+\usepackage{caption}
+%\usepackage{subcaption}
+\usepackage{color}
+\usepackage{float}
+\usepackage{listings}
+\usepackage[utf8]{inputenc}
+
+\lstdefinestyle{myPython}{
+	language=Python,                     % the language of the code
+	basicstyle=\linespread{.9}\footnotesize,       % the size of the fonts that are used for the code
+	numbers=none,                   % where to put the line-numbers
+	numberstyle=\tiny\color{black},  % the style that is used for the line-numbers
+	stepnumber=1,                   % the step between two line-numbers. If it's 1, each line
+	% will be numbered
+	numbersep=5pt,                  % how far the line-numbers are from the code
+	backgroundcolor=\color{white},  % choose the background color. You must add \usepackage{color}
+	showspaces=false,               % show spaces adding particular underscores
+	showstringspaces=false,         % underline spaces within strings
+	showtabs=false,                 % show tabs within strings adding particular underscores
+	frame=single,                   % adds a frame around the code
+	rulecolor=\color{black},        % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. commens (green here))
+	tabsize=2,                      % sets default tabsize to 2 spaces
+	captionpos=b,                   % sets the caption-position to bottom
+	breaklines=true,                % sets automatic line breaking
+	breakatwhitespace=false,        % sets if automatic breaks should only happen at whitespace
+	title=\lstname,                 % show the filename of files included with \lstinputlisting;
+	% also try caption instead of title
+	keywordstyle=\color{blue},      % keyword style
+	commentstyle=\color{green},   % comment style
+	stringstyle=\color{red},      % string literal style
+	%escapeinside={\%*}{*)},         % if you want to add a comment within your code
+	morekeywords={*,...}            % if you want to add more keywords to the set
+	linespread=0.1 %Ecart entre les lignes <=1
+}
+
+
+\makeatletter
+
+\newcommand{\rem}[1]{\fbox{\sf {#1}}}
+
+\title{LOG8415 \\ Concepts avanc\'{e}s en infonuagique \\ TP2\\ MapReduce with Hadoop and Spark on Microsoft Azure}
+
+\author{
+	Antoine Delaite, Mohamed Amine Barrak et Philippe Troclet \\
+		\\
+	Travail pr\'{e}sent\'{e} \`a \\
+		\\
+	Foutse Khomh et S. Amirhossein Abtahizadeh \\
+		\\
+	D\'{e}partement G\'{e}nie Informatique et G\'{e}nie Logiciel \\
+	\'{E}cole Polytechnique de Montr\'{e}al, Qu\'{e}bec, Canada
+}
+
+\date{22 mars 2017}
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+
+\section{Implémentation des patrons}
+\subsection{GateKeeper}
+Par manque de temsp nous n'avons pu implémenter le patron GateKeeper mais nous avons compris le concept du patron et identifié les points importants à implémenter. Notre architecture utiliserait deux VM séparées, une qui ferait office de GateKeeper et une autre pour être un Trusted Host. Nous avons identifé les points suivants:
+
+\begin{itemize}
+    \item Connexion sécurisée avec le trusted host: La connexion entre le GateKeeper et le Trusted Host doit être un canal sécurisé. Cela signifie qu'elle doit être cryptée, avec SSL par exemple. Nous pouvons utiliser une librairie qui va gérer l'encryption des échanges.
+    \item Filtrage des adresses IP, fermeture des ports: Dans notre architecture contenant un seul GateKeeper le Trusted Host n'accepterait que 4 IP entrantes: celle du GateKeeper, celle du noeud master et des 3 slaves. Tous les ports exceptés ceux utilisés par la connexion sécurisée seraient fermés. Le noeud master n'accepterait qu'une adresse IP entrante: le Trusted Host et les noeuds slaves n'accepterait que l'IP du noeud master.
+    \item Sanitiser les requêtes: On se base sur les bonnes pratiques SQL. On peut échapper tous les caractères spéciaux afin d'éviter de l'injection SQL. On va utiliser une 'White List Input validation' afin de n'autoriser des opérations que sur certaines tables. De plus le nom de la table dans laquelle on écrit n'est pas la variable définie par le client mais une constante décidée par le programmeur.
+    \item Filtrer les requêtes: Si une requête est identifiée malicieuse par une des règles précédentes (mauvais nom de table, tentative d'injection clairement identifiée ...) on bloque la requête et on peut aussi bloquer l'IP du client pour un certain temps.
+    \item Privilèges: Le GateKeeper doit rouler avec le minimum de privilèges possible. Ainsi, s'il est compromis l'impact sera minime. Cela permet aussi d'emêcher certaines actions malicieuses.
+\end{itemize}
+
+\section{Conclusion}
+
+%\section{Références:}
+% https://doc.ubuntu-fr.org/dd
+% https://romanrm.net/dd-benchmark
+%\subsection{Spark}
+%\begin{itemize}
+%	\item http://spark.apache.org/examples.html
+%\end{itemize}
+
+%\bibliographystyle{IEEEtran}
+%\bibliography{rapport}
+\pagebreak
+\section*{Références}
+GateKeeper:
+\begin{itemize}
+	\item http://www.singlefounder.com/thegatekeeper/
+	\item https://www.owasp.org/index.php/SQL\_Injection\_Prevention\_Cheat\_Sheet
+\end{itemize}
+
+\end{document}

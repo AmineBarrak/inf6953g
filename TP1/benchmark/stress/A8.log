@@ -1,0 +1,56 @@
+stress-ng: info:  [2484] dispatching hogs: 10 bigheap, 10 brk, 10 stack
+stress-ng: info:  [2484] cache allocate: default cache size: 30720K
+stress-ng: error: [2543] stress-ng-brk: brk(0x1cd9000) failed: errno=12 (Cannot allocate memory)
+stress-ng: info:  [2484] successful run completed in 31.19s
+stress-ng: info:  [2484] stressor      bogo ops real time  usr time  sys time   bogo ops/s   bogo ops/s
+stress-ng: info:  [2484]                          (secs)    (secs)    (secs)   (real time) (usr+sys time)
+stress-ng: info:  [2484] bigheap         289732     30.41      7.94     31.82      9528.12      7287.02
+stress-ng: info:  [2484] brk           26698124     29.97      9.41    141.29    890830.46    177160.74
+stress-ng: info:  [2484] stack              168     30.93     14.51     35.22         5.43         3.38
+stress-ng: info:  [2549] dispatching hogs: 10 bigheap, 10 brk, 10 stack
+stress-ng: info:  [2549] cache allocate: default cache size: 30720K
+stress-ng: error: [2557] stress-ng-brk: brk(0x1eea000) failed: errno=12 (Cannot allocate memory)
+stress-ng: error: [2590] stress-ng-brk: brk(0x1eea000) failed: errno=12 (Cannot allocate memory)
+stress-ng: error: [2594] stress-ng-brk: brk(0x1eea000) failed: errno=12 (Cannot allocate memory)
+stress-ng: info:  [2549] successful run completed in 31.09s
+stress-ng: info:  [2549] stressor      bogo ops real time  usr time  sys time   bogo ops/s   bogo ops/s
+stress-ng: info:  [2549]                          (secs)    (secs)    (secs)   (real time) (usr+sys time)
+stress-ng: info:  [2549] bigheap         265545     30.49     10.35     32.30      8709.57      6226.14
+stress-ng: info:  [2549] brk           26341270     29.46      8.65    141.47    894273.10    175468.09
+stress-ng: info:  [2549] stack              175     30.90     13.27     35.02         5.66         3.62
+stress-ng: info:  [2613] dispatching hogs: 10 bigheap, 10 brk, 10 stack
+stress-ng: info:  [2613] cache allocate: default cache size: 30720K
+stress-ng: error: [2664] stress-ng-brk: brk(0x18c8000) failed: errno=12 (Cannot allocate memory)
+stress-ng: info:  [2613] successful run completed in 31.20s
+stress-ng: info:  [2613] stressor      bogo ops real time  usr time  sys time   bogo ops/s   bogo ops/s
+stress-ng: info:  [2613]                          (secs)    (secs)    (secs)   (real time) (usr+sys time)
+stress-ng: info:  [2613] bigheap         282809     30.56      6.06     31.01      9253.44      7629.05
+stress-ng: info:  [2613] brk           28247496     28.30     10.10    154.68    998121.26    171425.51
+stress-ng: info:  [2613] stack               71     30.84      6.01     34.07         2.30         1.77
+stress-ng: info:  [2677] dispatching hogs: 10 bigheap, 10 brk, 10 stack
+stress-ng: info:  [2677] cache allocate: default cache size: 30720K
+stress-ng: error: [2721] stress-ng-brk: brk(0xf0e000) failed: errno=12 (Cannot allocate memory)
+stress-ng: info:  [2677] successful run completed in 31.24s
+stress-ng: info:  [2677] stressor      bogo ops real time  usr time  sys time   bogo ops/s   bogo ops/s
+stress-ng: info:  [2677]                          (secs)    (secs)    (secs)   (real time) (usr+sys time)
+stress-ng: info:  [2677] bigheap         366264     30.34      7.22     39.17     12073.70      7895.32
+stress-ng: info:  [2677] brk           25607397     29.82      8.94    141.98    858609.89    169675.30
+stress-ng: info:  [2677] stack              102     30.88      8.93     35.58         3.30         2.29
+stress-ng: info:  [2748] dispatching hogs: 10 bigheap, 10 brk, 10 stack
+stress-ng: info:  [2748] cache allocate: default cache size: 30720K
+stress-ng: error: [2799] stress-ng-brk: brk(0x1509000) failed: errno=12 (Cannot allocate memory)
+stress-ng: error: [2801] stress-ng-brk: brk(0x1509000) failed: errno=12 (Cannot allocate memory)
+stress-ng: error: [2795] stress-ng-brk: brk(0x1509000) failed: errno=12 (Cannot allocate memory)
+stress-ng: error: [2756] stress-ng-brk: brk(0x1509000) failed: errno=12 (Cannot allocate memory)
+stress-ng: error: [2796] stress-ng-brk: brk(0x1509000) failed: errno=12 (Cannot allocate memory)
+stress-ng: error: [2807] stress-ng-brk: brk(0x1509000) failed: errno=12 (Cannot allocate memory)
+stress-ng: error: [2788] stress-ng-brk: brk(0x1509000) failed: errno=12 (Cannot allocate memory)
+stress-ng: error: [2802] stress-ng-brk: brk(0x1509000) failed: errno=12 (Cannot allocate memory)
+stress-ng: error: [2797] stress-ng-brk: brk(0x1509000) failed: errno=12 (Cannot allocate memory)
+stress-ng: error: [2775] stress-ng-brk: brk(0x1509000) failed: errno=12 (Cannot allocate memory)
+stress-ng: info:  [2748] successful run completed in 32.62s
+stress-ng: info:  [2748] stressor      bogo ops real time  usr time  sys time   bogo ops/s   bogo ops/s
+stress-ng: info:  [2748]                          (secs)    (secs)    (secs)   (real time) (usr+sys time)
+stress-ng: info:  [2748] bigheap         522321     31.23     10.64     53.31     16726.68      8167.65
+stress-ng: info:  [2748] brk           17227602     24.39      6.15     91.13    706413.57    177092.95
+stress-ng: info:  [2748] stack              151     32.11     11.88     38.17         4.70         3.02

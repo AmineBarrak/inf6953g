@@ -1,0 +1,68 @@
+stress-ng: info:  [2219] dispatching hogs: 10 bigheap, 10 brk, 10 stack
+stress-ng: info:  [2219] cache allocate: default cache size: 25600K
+stress-ng: error: [2266] stress-ng-bigheap: fork failed: errno=12: (Cannot allocate memory)
+stress-ng: info:  [2219] successful run completed in 31.03s
+stress-ng: info:  [2219] stressor      bogo ops real time  usr time  sys time   bogo ops/s   bogo ops/s
+stress-ng: info:  [2219]                          (secs)    (secs)    (secs)   (real time) (usr+sys time)
+stress-ng: info:  [2219] bigheap         965726     28.60     17.47     42.38     33761.86     16135.77
+stress-ng: info:  [2219] brk           26781637     30.60      4.55     61.07    875074.61    408132.23
+stress-ng: info:  [2357] dispatching hogs: 10 bigheap, 10 brk, 10 stack
+stress-ng: info:  [2357] cache allocate: default cache size: 25600K
+stress-ng: error: [2395] stress-ng-brk: fork failed: errno=12: (Cannot allocate memory)
+stress-ng: error: [2385] stress-ng-brk: fork failed: errno=12: (Cannot allocate memory)
+stress-ng: error: [2380] stress-ng-brk: fork failed: errno=12: (Cannot allocate memory)
+stress-ng: error: [2374] stress-ng-brk: fork failed: errno=12: (Cannot allocate memory)
+stress-ng: error: [2361] stress-ng-bigheap: fork failed: errno=12: (Cannot allocate memory)
+stress-ng: error: [2383] stress-ng-bigheap: fork failed: errno=12: (Cannot allocate memory)
+stress-ng: error: [2369] stress-ng-brk: fork failed: errno=12: (Cannot allocate memory)
+stress-ng: info:  [2357] successful run completed in 32.29s
+stress-ng: info:  [2357] stressor      bogo ops real time  usr time  sys time   bogo ops/s   bogo ops/s
+stress-ng: info:  [2357]                          (secs)    (secs)    (secs)   (real time) (usr+sys time)
+stress-ng: info:  [2357] bigheap        1256373     28.72     23.41     55.75     43744.47     15871.31
+stress-ng: info:  [2357] brk           23326751     20.70      4.07     53.41   1126910.30    405823.78
+stress-ng: info:  [2357] stack              653     31.79     34.75     38.76        20.54         8.88
+stress-ng: info:  [2482] dispatching hogs: 10 bigheap, 10 brk, 10 stack
+stress-ng: info:  [2482] cache allocate: default cache size: 25600K
+stress-ng: error: [2518] stress-ng-brk: fork failed: errno=12: (Cannot allocate memory)
+stress-ng: error: [2483] stress-ng-bigheap: fork failed: errno=12: (Cannot allocate memory)
+stress-ng: error: [2487] stress-ng-brk: fork failed: errno=12: (Cannot allocate memory)
+stress-ng: error: [2484] stress-ng-brk: fork failed: errno=12: (Cannot allocate memory)
+stress-ng: error: [2486] stress-ng-bigheap: fork failed: errno=12: (Cannot allocate memory)
+stress-ng: error: [2526] stress-ng-brk: fork failed: errno=12: (Cannot allocate memory)
+stress-ng: error: [2522] stress-ng-brk: fork failed: errno=12: (Cannot allocate memory)
+stress-ng: error: [2497] stress-ng-bigheap: fork failed: errno=12: (Cannot allocate memory)
+stress-ng: error: [2492] stress-ng-brk: fork failed: errno=12: (Cannot allocate memory)
+stress-ng: error: [2504] stress-ng-bigheap: fork failed: errno=12: (Cannot allocate memory)
+stress-ng: info:  [2482] successful run completed in 31.35s
+stress-ng: info:  [2482] stressor      bogo ops real time  usr time  sys time   bogo ops/s   bogo ops/s
+stress-ng: info:  [2482]                          (secs)    (secs)    (secs)   (real time) (usr+sys time)
+stress-ng: info:  [2482] bigheap        1284100     22.85     27.42     52.53     56187.85     16061.29
+stress-ng: info:  [2482] brk           24633385     16.40      3.87     52.53   1501848.91    436762.15
+stress-ng: info:  [2482] stack              107     30.68      9.56     49.42         3.49         1.81
+stress-ng: info:  [2604] dispatching hogs: 10 bigheap, 10 brk, 10 stack
+stress-ng: info:  [2604] cache allocate: default cache size: 25600K
+stress-ng: error: [2644] stress-ng-brk: fork failed: errno=12: (Cannot allocate memory)
+stress-ng: error: [2647] stress-ng-bigheap: fork failed: errno=12: (Cannot allocate memory)
+stress-ng: error: [2632] stress-ng-bigheap: fork failed: errno=12: (Cannot allocate memory)
+stress-ng: error: [2608] stress-ng-bigheap: fork failed: errno=12: (Cannot allocate memory)
+stress-ng: error: [2619] stress-ng-bigheap: fork failed: errno=12: (Cannot allocate memory)
+stress-ng: error: [2610] stress-ng-brk: fork failed: errno=12: (Cannot allocate memory)
+stress-ng: info:  [2604] successful run completed in 31.54s
+stress-ng: info:  [2604] stressor      bogo ops real time  usr time  sys time   bogo ops/s   bogo ops/s
+stress-ng: info:  [2604]                          (secs)    (secs)    (secs)   (real time) (usr+sys time)
+stress-ng: info:  [2604] bigheap         943989     24.29     17.97     39.41     38868.06     16451.53
+stress-ng: info:  [2604] brk           27925256     27.86      4.70     62.02   1002378.61    418544.00
+stress-ng: info:  [2727] dispatching hogs: 10 bigheap, 10 brk, 10 stack
+stress-ng: info:  [2727] cache allocate: default cache size: 25600K
+stress-ng: error: [2737] stress-ng-brk: fork failed: errno=12: (Cannot allocate memory)
+stress-ng: error: [2769] stress-ng-bigheap: fork failed: errno=12: (Cannot allocate memory)
+stress-ng: error: [2774] stress-ng-brk: fork failed: errno=12: (Cannot allocate memory)
+stress-ng: error: [2742] stress-ng-brk: fork failed: errno=12: (Cannot allocate memory)
+stress-ng: error: [2766] stress-ng-bigheap: fork failed: errno=12: (Cannot allocate memory)
+stress-ng: error: [2735] stress-ng-stack: fork failed: errno=12: (Cannot allocate memory)
+stress-ng: error: [2770] stress-ng-brk: fork failed: errno=12: (Cannot allocate memory)
+stress-ng: info:  [2727] successful run completed in 31.19s
+stress-ng: info:  [2727] stressor      bogo ops real time  usr time  sys time   bogo ops/s   bogo ops/s
+stress-ng: info:  [2727]                          (secs)    (secs)    (secs)   (real time) (usr+sys time)
+stress-ng: info:  [2727] bigheap        1239687     28.17     23.05     52.33     44009.37     16445.83
+stress-ng: info:  [2727] brk           24884209     24.82      4.47     57.21   1002713.79    403440.48

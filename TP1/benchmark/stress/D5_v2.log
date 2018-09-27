@@ -1,0 +1,40 @@
+stress-ng: info:  [5950] dispatching hogs: 10 bigheap, 10 brk, 10 stack
+stress-ng: info:  [5950] cache allocate: default cache size: 30720K
+stress-ng: info:  [5950] successful run completed in 31.13s
+stress-ng: info:  [5950] stressor      bogo ops real time  usr time  sys time   bogo ops/s   bogo ops/s
+stress-ng: info:  [5950]                          (secs)    (secs)    (secs)   (real time) (usr+sys time)
+stress-ng: info:  [5950] bigheap        3061903     30.12     59.81    148.49    101665.91     14699.49
+stress-ng: info:  [5950] brk           84220579     30.19     14.72    194.11   2789541.73    403297.32
+stress-ng: info:  [5950] stack               46     30.88      6.60     48.79         1.49         0.83
+stress-ng: info:  [6013] dispatching hogs: 10 bigheap, 10 brk, 10 stack
+stress-ng: info:  [6013] cache allocate: default cache size: 30720K
+stress-ng: info:  [6013] successful run completed in 31.05s
+stress-ng: info:  [6013] stressor      bogo ops real time  usr time  sys time   bogo ops/s   bogo ops/s
+stress-ng: info:  [6013]                          (secs)    (secs)    (secs)   (real time) (usr+sys time)
+stress-ng: info:  [6013] bigheap        3507361     30.09     42.28    143.80    116550.39     18848.67
+stress-ng: info:  [6013] brk           90022437     30.02     14.56    194.49   2998639.51    430626.34
+stress-ng: info:  [6013] stack              146     30.90     20.10     70.45         4.72         1.61
+stress-ng: info:  [6078] dispatching hogs: 10 bigheap, 10 brk, 10 stack
+stress-ng: info:  [6078] cache allocate: default cache size: 30720K
+stress-ng: info:  [6078] successful run completed in 30.80s
+stress-ng: info:  [6078] stressor      bogo ops real time  usr time  sys time   bogo ops/s   bogo ops/s
+stress-ng: info:  [6078]                          (secs)    (secs)    (secs)   (real time) (usr+sys time)
+stress-ng: info:  [6078] bigheap        3205516     30.40     66.05    120.14    105443.63     17216.37
+stress-ng: info:  [6078] brk           80174311     30.39     13.36    162.82   2638275.71    455070.44
+stress-ng: info:  [6078] stack             1672     30.46    106.25     17.31        54.90        13.53
+stress-ng: info:  [6141] dispatching hogs: 10 bigheap, 10 brk, 10 stack
+stress-ng: info:  [6141] cache allocate: default cache size: 30720K
+stress-ng: info:  [6141] successful run completed in 30.99s
+stress-ng: info:  [6141] stressor      bogo ops real time  usr time  sys time   bogo ops/s   bogo ops/s
+stress-ng: info:  [6141]                          (secs)    (secs)    (secs)   (real time) (usr+sys time)
+stress-ng: info:  [6141] bigheap        2651048     30.28     72.41     98.38     87564.31     15522.27
+stress-ng: info:  [6141] brk           81845091     30.28     13.39    148.63   2702861.82    505154.25
+stress-ng: info:  [6141] stack            15203     30.08    147.16      2.96       505.34       101.27
+stress-ng: info:  [6207] dispatching hogs: 10 bigheap, 10 brk, 10 stack
+stress-ng: info:  [6207] cache allocate: default cache size: 30720K
+stress-ng: info:  [6207] successful run completed in 31.18s
+stress-ng: info:  [6207] stressor      bogo ops real time  usr time  sys time   bogo ops/s   bogo ops/s
+stress-ng: info:  [6207]                          (secs)    (secs)    (secs)   (real time) (usr+sys time)
+stress-ng: info:  [6207] bigheap        2587733     30.13     72.79    128.90     85896.83     12830.25
+stress-ng: info:  [6207] brk           95746514     30.22     15.94    217.00   3167944.64    411035.09
+stress-ng: info:  [6207] stack               49     30.84      7.57     43.42         1.59         0.96

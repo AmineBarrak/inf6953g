@@ -1,0 +1,41 @@
+#!/bin/bash
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install build-essential
+sudo apt install speedtest-cli
+
+
+
+#CPU installation
+tar xvf UnixBench5.1.3.tgz
+cd UnixBench
+make
+cd ..
+
+
+
+#______________________________________________________
+
+
+for i in `seq 1 5`
+do
+
+#1-CPU
+cd UnixBench
+sudo ./UnixBench/Run >> UnixBench.txt
+cd ..
+
+#2-IO
+sudo dd if=/dev/zero of=sb-io-test bs=1MB count=1 conv=fdatasync >> IO.txt
+#3-network test
+speedtest-cli >>speedtest.txt
+
+#4-Disk performance
+#speed of a disk
+sudo hdparm -Tt /dev/xvda1 >>disk.txt
+
+
+
+
+
+done
